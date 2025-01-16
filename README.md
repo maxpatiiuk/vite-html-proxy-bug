@@ -10,6 +10,7 @@ Vite issue URL: https://github.com/vitejs/vite/issues/19213
 
    ```sh
    git clone https://github.com/maxpatiiuk/vite-html-proxy-bug
+   cd vite-html-proxy-bug
    ```
 
 2. Install dependencies
@@ -18,7 +19,7 @@ Vite issue URL: https://github.com/vitejs/vite/issues/19213
    npm install
    ```
 
-3. Run vitest browser mode:
+3. Run vitest browser mode
 
    ```sh
    npx vitest
