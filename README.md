@@ -2,6 +2,8 @@
 
 This is a Vite bug that affects Vitest.
 
+Vite issue URL: https://github.com/vitejs/vite/issues/19213
+
 ## Reproduction
 
 1. Clone this repository
@@ -76,6 +78,24 @@ For reference, this is already correct in the `vite:css-post` plugin: https://gi
 Also, the Vite team should evaluate whether this bug affects any other Vite plugins.
 
 ## Environment
+
+```
+  System:
+    OS: macOS 15.2
+    CPU: (10) arm64 Apple M1 Pro
+    Memory: 702.52 MB / 32.00 GB
+    Shell: 5.9 - /bin/zsh
+  Binaries:
+    Node: 22.12.0 - ~/.local/state/fnm_multishells/98022_1737052578656/bin/node
+    Yarn: 1.22.19 - ~/.local/state/fnm_multishells/98022_1737052578656/bin/yarn
+    npm: 10.9.0 - ~/.local/state/fnm_multishells/98022_1737052578656/bin/npm
+    pnpm: 8.9.0 - ~/.local/state/fnm_multishells/98022_1737052578656/bin/pnpm
+  Browsers:
+    Chrome: 131.0.6778.265
+    Safari: 18.2
+  npmPackages:
+    vite: ^5.2.0 => 5.4.11
+```
 
 Reproducible in `@vitest/browser` in 2.1.5 and above including 3.0.0 (related commit: https://github.com/vitest-dev/vitest/commit/169028f03abf5e80d77924f4ed9ae6107647c4c0). Not reproducible in 2.1.3 as transformIndexHtml wasn't called in that version.
 
