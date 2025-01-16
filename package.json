@@ -1,0 +1,17 @@
+{
+  "name": "vite-html-proxy-bug",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitest/browser": "3.0.0",
+    "vite": "^5.2.0",
+    "vitest": "3.0.0"
+  },
+  "packageManager": "pnpm@8.9.0+sha1.01c55344d677f3b481c6bb6ffba9a6b3c6dbd91d"
+}
